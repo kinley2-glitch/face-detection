@@ -1,2 +1,2 @@
-# face-detection-using-deep-learning
+# Face-Detection-Using-Deep-Learning
 Face Detection
