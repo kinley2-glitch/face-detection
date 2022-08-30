@@ -82,8 +82,7 @@ Face detection, also known as facial detection, is a computer technology that us
                          str(format(gamma, '.1f')) +'-'+ str(count) + ext, image)
    ```
  
-## How to use the code?
-To get started with the project.
+## To get started with the project.
 ```bash
    git clone https://github.com/kinley2-glitch/face-detection-using-deep-learning
 ```
