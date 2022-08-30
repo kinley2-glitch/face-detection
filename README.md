@@ -19,31 +19,32 @@ Face detection, also known as facial detection, is a computer technology that us
    Using open-cv extract the image frame from the videos
    ```bash
       # Capture the video
-       current_frame = 0
-       video = cv2.VideoCapture(frame_list[idx])
-       while(True):
-           _, frame = video.read()
+      current_frame = 0
+      video = cv2.VideoCapture(frame_list[idx])
+      while(True):
+          _, frame = video.read()
 
-           # Handel the exception error
-           try:
-               train_image = cv2.resize(frame, (256,256), interpolation=cv2.INTER_AREA)
-           except:
-               break
+          # Handel the exception error
+          try:
+              train_image = cv2.resize(frame, (256,256), interpolation=cv2.INTER_AREA)
+          except:
+              break
 
-           cv2.imshow("Train", train_image)
+          cv2.imshow("Train", train_image)
 
-           # Saving the image to its corresponding dataset folders
-           cv2.imwrite(directory+str(current_frame)+'.jpg', train_image)
-           length.append(current_frame)
-           current_frame += 1
+          # Saving the image to its corresponding dataset folders
+          cv2.imwrite(directory+str(current_frame)+'.jpg', train_image)
+          length.append(current_frame)
+          current_frame += 1
 
-           interrupt = cv2.waitKey(10)
-           if interrupt & 0xFF == 27: 
-               break
+          interrupt = cv2.waitKey(10)
+          if interrupt & 0xFF == 27: 
+              break
       video.release()
       cv2.destroyAllWindows()
    ```
 4. Image augmentation
+   Image augmentation artificially creates training images through different ways of processing or combination of multiple processing, such as random        rotation, shifts, shear and flips.
  
 ## How to use the code?
 To get started with the project.
