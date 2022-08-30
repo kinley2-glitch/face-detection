@@ -1,8 +1,8 @@
 # Face-Detection-Using-Deep-Learning
 
-Face detection -- also called facial detection -- is an artificial intelligence (AI) based computer technology used to find and identify human faces in digital images. Face detection technology can be applied to various fields -- including security, biometrics, law enforcement, entertainment and personal safety -- to provide surveillance and tracking of people in real time.
+Face detection, also known as facial detection, is a computer technology that uses artificial intelligence (AI) to find and recognize human faces in digital photographs. Face detection technology can be used to enable real-time surveillance and tracking of people in a variety of industries, such as security, biometrics, law enforcement, entertainment, and personal safety.
 
-Face detection has progressed from rudimentary computer vision techniques to advances in machine learning (ML) to increasingly sophisticated artificial neural networks (ANN) and related technologies; the result has been continuous performance improvements. It now plays an important role as the first step in many key applications -- including face tracking, face analysis and facial recognition. Face detection has a significant effect on how sequential operations will perform in the application.
+Face identification has advanced from simple computer vision approaches to increasingly complex artificial neural networks (ANN) and associated technologies, with the end result being constant performance gains. Face tracking, face analysis, and facial recognition are just a few of the significant applications it now serves as the starting point for. Sequential operations in the application will function significantly differently depending on face detection.
 
 ## Steps
 1. Creating a video frame
