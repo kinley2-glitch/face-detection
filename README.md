@@ -4,7 +4,12 @@ Face detection, also known as facial detection, is a computer technology that us
 
 Face identification has advanced from simple computer vision approaches to increasingly complex artificial neural networks (ANN) and associated technologies, with the end result being constant performance gains. Face tracking, face analysis, and facial recognition are just a few of the significant applications it now serves as the starting point for. Sequential operations in the application will function significantly differently depending on face detection.
 
+
 ## Steps
+```bash
+   Creating a video frame
+   Collect a video of the person you want to add into face detection system of atleast - 20 secs
+```
 1. Creating a video frame
    Collect a video of the person you want to add into face detection system of atleast - 20 secs
 
@@ -13,9 +18,8 @@ Face identification has advanced from simple computer vision approaches to incre
    
 ## How to use the code?
 To get started with the project.
-
 ```bash
-  git clone [github](https://github.com/kinley2-glitch/face-detection-using-deep-learning)
+  git clone https://github.com/kinley2-glitch/face-detection-using-deep-learning
 ```
 
 ## Authors
