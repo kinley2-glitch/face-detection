@@ -13,5 +13,6 @@ Face identification has advanced from simple computer vision approaches to incre
    
 ## How to use the code?
 1. git clone https://github.com/kinley2-glitch/face-detection-using-deep-learning
-2. 
+2. Edit the code to your convinience
+
 
