@@ -44,7 +44,43 @@ Face detection, also known as facial detection, is a computer technology that us
       cv2.destroyAllWindows()
    ```
 4. Image augmentation
-   Image augmentation artificially creates training images through different ways of processing or combination of multiple processing, such as random        rotation, shifts, shear and flips.
+   Image augmentation artificially creates training images through different ways of processing or combination of multiple processing, such as random        rotation, shifts, shear and flips. Below are some image augmentation example:
+   
+   Inverting 
+   ```bash
+      def invert_image(image, channel, count):
+         image = (channel-image)
+         cv2.imwrite(path + "/Invert/" + str(channel) + '-' + str(count)+ ext, image)
+   ```
+   Adding Light 
+   ```bash
+      def add_light(image, gamma, count):
+         inverseGamma = 1.0 / gamma
+         table = np.array([((i / 255.0) ** inverseGamma) *
+                           255 for i in np.arange(0, 256)]).astype("uint8")
+         image = cv2.LUT(image, table)
+         if gamma >= 1:
+             cv2.imwrite(path + "/Light/" +
+                         str(format(gamma, '.1f')) +'-'+ str(count) + ext, image)
+         else:
+             cv2.imwrite(path + "/Dark/" +
+                         str(format(gamma, '.1f')) +'-'+ str(count) + ext, image)
+   ```
+   Adding Light Color
+   ```bash
+      def add_light_color(image, color, gamma, count):
+         inverseGamma = 1.0 / gamma
+         image = (color - image)
+         table = np.array([((i / 255.0) ** inverseGamma) *
+                           255 for i in np.arange(0, 256)]).astype("uint8")
+         image = cv2.LUT(image, table)
+         if gamma >= 1:
+             cv2.imwrite(path + "/Light_color/" +
+                         str(format(gamma, '.1f')) +'-'+ str(count) + ext, image)
+         else :
+             cv2.imwrite(path + "/Dark_color/" +
+                         str(format(gamma, '.1f')) +'-'+ str(count) + ext, image)
+   ```
  
 ## How to use the code?
 To get started with the project.
