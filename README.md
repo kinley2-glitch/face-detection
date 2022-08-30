@@ -12,8 +12,11 @@ Face identification has advanced from simple computer vision approaches to incre
    Using open-cv extract the image frame from the videos
    
 ## How to use the code?
-1. git clone https://github.com/kinley2-glitch/face-detection-using-deep-learning
-2. Edit the code to your convinience
+To get started with the project.
+
+```bash
+  git clone [github](https://github.com/kinley2-glitch/face-detection-using-deep-learning)
+```
 
 ## Authors
 - [kinley2-glitch](https://github.com/kinley2-glitch)
